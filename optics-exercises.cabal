@@ -1,0 +1,104 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f5b0a834cb3152a42b4d826fa19eef55d3fa5251495cd3aa55749df8c1b085aa
+
+name:           optics-exercises
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/optics-exercises#readme>
+homepage:       https://github.com/githubuser/optics-exercises#readme
+bug-reports:    https://github.com/githubuser/optics-exercises/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/optics-exercises
+
+library
+  exposed-modules:
+      Chapter1
+      Chapter2
+      Chapter3_1
+      Chapter3_2
+      Chapter3_3
+      Chapter3_4
+      Chapter3_5
+      Chapter3_6
+      Chapter3_7
+      Chapter3_8
+      Chapter3_9
+      Chapter4
+      Chapter5_1
+      Chapter5_2
+      Chapter5_3
+      Chapter6_1
+      Chapter6_2
+      Chapter6_3
+      Chapter6_4
+      Chapter6_5
+      Chapter6_6
+      Chapter6_7
+  other-modules:
+      Paths_optics_exercises
+  hs-source-dirs:
+      src
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , lens
+    , lens-aeson
+    , mtl
+    , text
+  default-language: Haskell2010
+
+executable optics-exercises-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_optics_exercises
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , lens
+    , lens-aeson
+    , mtl
+    , optics-exercises
+    , text
+  default-language: Haskell2010
+
+test-suite optics-exercises-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_optics_exercises
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , lens
+    , lens-aeson
+    , mtl
+    , optics-exercises
+    , text
+  default-language: Haskell2010
